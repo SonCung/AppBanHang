@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid_product_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/slider_background"
+    android:elevation="3dp">
+
+    <TextView
+        android:id="@+id/titleGridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Title"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGridLayoutViewAll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnGridLayoutViewAll" />
+
+    <Button
+        android:id="@+id/btnGridLayoutViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorAccent"
+        android:text="View All"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGridLayoutViewAll">
+
+        <include
+            layout="@layout/horizontal_scroll_item"
+            app:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/horizontal_scroll_item"
+            app:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/horizontal_scroll_item"
+            app:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/horizontal_scroll_item"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1" />
+    </android.support.v7.widget.GridLayout>
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/recycleViewBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/grid_layout"
+        app:layout_constraintEnd_toEndOf="@+id/grid_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/grid_layout" />
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/recycleViewBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/grid_layout"
+        app:layout_constraintEnd_toEndOf="@+id/grid_layout"
+        app:layout_constraintStart_toStartOf="@+id/grid_layout"
+        app:layout_constraintTop_toTopOf="@+id/divider11" />
+
+
+    <!--gridViewLayout-->
+    <!--<GridView-->
+    <!--android:id="@+id/gridViewLayout"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="319dp"-->
+    <!--android:background="#d9d9d9"-->
+    <!--android:horizontalSpacing="1dp"-->
+    <!--android:numColumns="2"-->
+    <!--android:verticalSpacing="1dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/btnGridLayoutViewAll" />-->
+</android.support.constraint.ConstraintLayout>

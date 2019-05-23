@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="app_default">12sp</dimen>
+    <dimen name="input_title">14sp</dimen>
+    <dimen name="input_hint">14sp</dimen>
+    <dimen name="halfMargin">2dp</dimen>
+    <dimen name="product_detail_button">12sp</dimen>
+    <dimen name="defaultMargin">8dp</dimen>
+    <dimen name="defaultPaddingTopBottom">8dp</dimen>
+    <dimen name="defaultPaddingRightLeft">16dp</dimen>
+
+
+    <dimen name="margin_top">10dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>
